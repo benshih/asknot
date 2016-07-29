@@ -100,6 +100,7 @@
           setGroupChoices(group, choiceId);
         }
 
+        $('#contact-form')[0].style.display = 'none';
         var firstChoice = $('#wrapper > div')[0].id;
         $('#back')[0].style.display = group === firstChoice ? 'none' : 'block';
         $('#next')[0].style.display = group !== firstChoice && choices[choices.length - 1].length == 1 ? 'none' : 'block';
